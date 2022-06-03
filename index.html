@@ -14,7 +14,7 @@
         <div class = "bill-total-container">
             <div class = "bill-input">
                 <label for = "bill-subtotal">Bill Total Before Tip:</label>
-                <input type = "decimalNumber" pattern="\d*" id = "bill-subtotal" min = "0" oninput="handleBill(this.value)">
+                <input type = "decimalNumber" pattern="\d*" id = "bill-subtotal" min = "0" inputmode = "decimal" oninput="handleBill(this.value)">
             </div>
 
             <h1 id = "tipTotal">Tip: $0.00</h1>
