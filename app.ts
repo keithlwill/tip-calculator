@@ -45,7 +45,7 @@ roundUp = function() {
 
     let newTip:number = (beforeTip * (tipPercent/100)) + diff
     let displayText = `If you round up, your new total will be $${up}. This means that the tip needs to be $${newTip.toFixed(2)}.
-    This new tip is ${((newTip/up)*100).toFixed(2)}%`
+    This new tip is ${((newTip/beforeTip)*100).toFixed(2)}% of the original subtotal.`
 
     document.getElementById("roundUpText").innerHTML = displayText;
 }
