@@ -34,6 +34,6 @@ roundUp = function () {
     var up = Math.ceil(billWithTip);
     var diff = parseFloat((up - billWithTip).toFixed(2));
     var newTip = (beforeTip * (tipPercent / 100)) + diff;
-    var displayText = "If you round up, your new total will be $".concat(up, ". This means that the tip needs to be $").concat(newTip.toFixed(2), ".\n    This new tip is ").concat(((newTip / up) * 100).toFixed(2), "%");
+    var displayText = "If you round up, your new total will be $".concat(up, ". This means that the tip needs to be $").concat(newTip.toFixed(2), ".\n    This new tip is ").concat(((newTip / beforeTip) * 100).toFixed(2), "% of the original subtotal.");
     document.getElementById("roundUpText").innerHTML = displayText;
 };
